@@ -1,0 +1,140 @@
+.search {
+    display: flex;
+}
+
+main .search-section {
+    margin: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    /* grid-template-columns: 1fr 2fr; */
+}
+main .search-section .search-col {
+    padding: 20px;
+    border: 1.5px solid #EBEBF0;
+    border-radius: 8px;
+}
+main .search-section .search-col h4 {
+    text-align: center;
+    font-size: 18px;
+}
+main .search-section .search-col form {
+    margin-top: 30px;
+}
+main .search-section .search-col form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+main .search-section .search-col form label {
+    font-size: 14px;
+}
+main .search-section .search-col form input, select {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1.5px solid #EBEBF0;
+    border-radius: 8px;
+    transition: all 0.1s ease-in;
+}
+main .search-section .search-col form input:hover, select:hover {
+    border: 1px solid #999999;
+}
+main .search-section .search-col form input:focus, select:focus {
+    outline: #999999;
+    border: 1px solid #999999;
+}
+main .search-section .search-col form .checkbox-star {
+    display: flex;
+    padding: 5px 10px;
+}
+main .search-section .search-col form input[type=checkbox] {
+    -ms-transform: scale(1.3); /* IE */
+    -moz-transform: scale(1.3); /* FF */
+    -webkit-transform: scale(1.3); /* Safari and Chrome */
+    -o-transform: scale(1.3); /* Opera */
+    transform: scale(1.3);
+}
+main .search-section .search-col form .star-collection {
+    padding: 0 18px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+main .search-section .search-col form .star-collection i {
+    font-size: 22px;
+    color: rgb(243, 204, 27);
+}
+main .search-section .search-col form .star-collection .star-empty {
+    color: #d4d4d4;
+}
+
+main .search-section .search-col .button-collection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #999999;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+main .search-section .search-col form button {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00A0E3;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+main .search-section .search-col form button:hover {
+    background-color: #0280b6;
+    transition: 0.1s ease-in-out;
+}
+main .search-section .search-col .button-collection button:last-child{
+    background-color: #d4d4d4;
+}
+main .search-section .search-col .button-collection .active-button {
+    background-color: #434343;
+}
+
+.collection-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: fit-content;
+    gap: 20px;
+}
+
+
+main .search-section .collection-list .book img {
+    width: 150px;
+}
+
+main .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
+}
+main .pagination .pagination-number {
+    display: flex;
+    gap: 10px;
+}
+main .pagination .pagination-number button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+main .pagination .pagination-number button:hover {
+    background-color: #d4d4d4;
+}
+main .pagination .pagination-number .active-pagination {
+    background-color: #EBEBF0;
+}

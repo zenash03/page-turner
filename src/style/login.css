@@ -1,0 +1,62 @@
+main {
+    background-color: #B8DFFA;
+    height: 100%;
+    width: 100%;
+}
+
+main .section-login {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main .section-login .login-block {
+    background-color: #ffffff;
+    width: 100vh;
+    height: 60vh;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+main .section-login .login-block .login-left{
+    background-color: #288DD3;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+main .section-login .login-block .login-right {
+    padding: 3rem 4rem;
+}
+main .section-login .login-block .login-right h2 {
+    text-align: center;
+    padding: 20px;
+}
+main .section-login .login-block .input-block {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+main .section-login .login-block .input-block label {
+    color: #434343;
+    opacity: 0.9;
+    font-size: 14px;
+}
+main .section-login .login-block .input-block input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #999999;
+}
+main .section-login .login-block .input-block button {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #288DD3;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.12s ease-in-out;
+}
+main .section-login .login-block .input-block button:hover {
+    background-color: #0280b6;
+}

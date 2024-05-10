@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Borrow List</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/book-borrow.css">
+    <script src="https://kit.fontawesome.com/e7a7d8cf45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="../../assets/Images/logo4.png" alt="">
+        <nav>
+            <div class="navbar">
+                <a href="./landing-page.html" class="nav-item">Home</a>
+                <div class="dropdown">
+                    <a href="" class="nav-item dropdown-btn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="./book-collection.html" class="nav-item">Peminjaman Buku</a>
+                        <a href="./form-donasi.html" class="nav-item">Donasi Buku</a>
+                        <a href="./book-detail.html" class="nav-item">Buku</a>
+                    </div>
+                </div>
+                <a href="" class="nav-item">About</a>
+                <a href="" class="nav-item">Contact</a>
+                <a href="./profile-page.html" class="nav-profile nav-item">
+                    <i class="fa-solid fa-user profile-icon"></i>
+                    <span>Aldo</span>
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="transaction-list">
+            <div class="transaction-list-content">
+                <h3>Daftar Transaksi</h3>
+                <div class="transaction-list-block">
+                    <div class="transaction-filter">
+                        <!-- <h4>Status</h4> -->
+                        <button class="active">Semua</button>
+                        <button>Peminjaman Buku</button>
+                        <button>Pembelian</button>
+                        <button>Donasi Buku</button>
+                        <!-- <button>Reset Filter</button> -->
+                    </div>
+                    <div class="transaction-collection">
+                        <div class="transaction-item">
+                            <div class="transaction-item-header">
+                                <div class="transaction-header-1">
+                                    <p class="transaction-type">Peminjaman</p>
+                                    <p class="transaction-status">Berlangsung</p>
+                                    <p class="transaction-icon">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </p>
+                                </div>
+                                <div class="transaction-header-2">
+                                    <h6 class="transaction-date">5 Mei 2023</h6>
+                                </div>
+                            </div>
+                            <div class="transaction-item-center">
+                                <div class="transaction-item-book">
+                                    <div class="content-start">
+                                        <img src="../../assets/Images/books/book-01.jpg" alt="img"  class="item-image">
+                                    </div>
+                                    <div class="content-center">
+                                        <h5>Book of Legend</h5>
+                                        <p>Author Name Legend</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transaction-item-footer">
+                                <ul class="transaction-info">
+                                    <li>
+                                        <h5>Tanggal</h5>
+                                        <p>Pengembalian</p>
+                                    </li>
+                                    <li>
+                                        <h5>Rating</h5>
+                                        <p>4.9</p>
+                                    </li>
+                                    <li>
+                                        <h5>Comments</h5>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse iusto aliquid tempora, quaerat culpa hic consequuntur sint rem voluptatem quibusdam iure totam dolore expedita recusandae cumque voluptates ipsum sed saepe.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

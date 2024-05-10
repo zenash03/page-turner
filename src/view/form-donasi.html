@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Donasi Buku</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/form-donasi-buku.css">
+    <script src="https://kit.fontawesome.com/e7a7d8cf45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="../../assets/Images/logo4.png" alt="">
+        <nav>
+            <div class="navbar">
+                <a href="./landing-page.html" class="nav-item">Home</a>
+                <div class="dropdown">
+                    <a href="" class="nav-item dropdown-btn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="./book-collection.html" class="nav-item">Peminjaman Buku</a>
+                        <a href="./form-donasi.html" class="nav-item">Donasi Buku</a>
+                        <a href="./book-detail.html" class="nav-item">Buku</a>
+                    </div>
+                </div>
+                <a href="" class="nav-item">About</a>
+                <a href="" class="nav-item">Contact</a>
+                <a href="./profile-page.html" class="nav-profile nav-item">
+                    <i class="fa-solid fa-user profile-icon"></i>
+                    <span>Aldo</span>
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-form-donasi">
+            <div>
+                <h2 class="form-title">Form Donasi Buku</h2>
+                <form action="">
+                    <div class="user-form">
+                        <h4 class="title-block">Data Diri</h4>
+                        <div class="input-block">
+                            <label for="namaLengkap">Nama Lengkap</label>
+                            <input type="text" id="namaLengkap" name="namaLengkap">
+                        </div>
+                        <div class="input-block">
+                            <label for="noTelepon">Nomor Telepon</label>
+                            <input type="text" name="noTelepon" id="noTelepon">
+                        </div>
+                        <!-- <div class="input-block">
+                            <label for="alamat">Alamat</label>
+                            <textarea name="alamat" id="alamat" cols="20" rows="5"></textarea>
+                        </div> -->
+                    </div>
+                    
+                    <div class="book-form">
+                        <h4 class="title-block">Detail Buku</h4>
+                        <div class="input-block">
+                            <label for="judulBuku">Judul Buku</label>
+                            <input type="text" name="judulBuku" id="judulBuku">
+                        </div>
+                        <div class="input-block">
+                            <label for="penulis">Penulis</label>
+                            <input type="text" name="penulis" id="penulis">
+                        </div>
+                        <div class="input-block">
+                            <label for="kondisiBuku">KondisiBuku</label>
+                            <select name="kondisiBuku" id="kondisiBuku">
+                                <option value="baru">baru</option>
+                                <option value="bekas">bekas</option>
+                            </select>
+                        </div>
+                        <div class="input-block">
+                            <label for="deskripsi">Deskripsi (Optional)</label>
+                            <textarea name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="metode-pengiriman">
+                        <h4>Metode Pengiriman</h4>
+                        <div class="input-block">
+                            <label for="opsi">Opsi Pengiriman Buku</label>
+                            <select name="opsi" id="opsi">
+                                <option value="antar jemput">antar jemput</option>
+                                <option value="pengiriman langsung">pengiriman langsung</option>
+                            </select>
+                        </div>
+                        <div id="opsiJemput">
+                            <div class="input-block">
+                                <label for="alamatPengirim">Alamat</label>
+                                <textarea name="alamatPengirim" id="alamatPengirim" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox" name="terms" id="terms"> Saya menyetujui <a href="">syarat dan ketentuan</a> privasi aplikasi.
+                    <div class="submit-form">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

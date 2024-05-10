@@ -1,0 +1,73 @@
+main .section-form-donasi {
+    margin: 3rem 10rem;
+}
+main .section-form-donasi .form-title {
+    margin-bottom: 15px;
+}
+main .section-form-donasi label {
+    font-weight: 500;
+    font-size: 15px;
+}
+main .section-form-donasi input, select, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+}
+main .section-form-donasi input:focus, select:focus, textarea:focus {
+    outline: 1px solid #EBEBF0;
+}
+
+main .section-form-donasi .input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .section-form-donasi .user-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+main .section-form-donasi .book-form {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+main .section-form-donasi .user-form h4, main .section-form-donasi .book-form h4{
+    grid-column: 2 span;
+    color: #288DD3;
+    font-size: 18px;
+}
+
+main .section-form-donasi .metode-pengiriman {
+    display: grid;
+    gap: 20px;
+}
+main .section-form-donasi .metode-pengiriman h4{
+    color: #288DD3;
+    font-size: 18px;
+}
+
+main .section-form-donasi .submit-form {
+    display: grid;
+    grid-auto-columns: min-content;
+    justify-content: flex-end;
+}
+main .section-form-donasi .submit-form button {
+    border: none;
+    background-color: #288DD3;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 240px;
+    transition: 0.12s ease-in-out;
+    cursor: pointer;
+}
+main .section-form-donasi .submit-form button:hover{
+    background-color: #0280b6;
+}
