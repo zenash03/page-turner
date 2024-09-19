@@ -1,0 +1,106 @@
+main .book-detail {
+    margin: 3rem 10rem;
+}
+
+main .book-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+    padding: 25px;
+    border: 1.8px solid #EBEBF0;
+    border-radius: 8px;
+}
+
+main .book-content .book-detail-img {
+    width: 100%;
+    border-radius: 6px;
+}
+main .book-detail-content {
+
+}
+
+main .book-detail-content {
+    display: grid;
+    gap: 10px;
+    /* grid-auto-rows: max-content; */
+}
+main .book-detail-content .book-detail-type {
+    font-size: 14px;
+    color: #288DD3;
+    background-color: #B8DFFA;
+    padding: 2px 15px;
+    border-radius: 15px;
+    width: fit-content;
+    font-weight: 600;
+}
+main .book-detail-content .book-author {
+    color: #999999;
+}
+main .book-detail-content .book-rating i{
+    color: rgb(243, 204, 27);
+}
+main .book-detail-content .book-rating .star-empty {
+    color: #d4d4d4;
+}
+
+main .book-description-content {
+    border-top: 1.5px solid #EBEBF0;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 14px;
+    gap: 15px;
+}
+main .book-description-content span {
+    display: grid;
+    gap: 5px;
+}
+main .book-description-content span p {
+    opacity: 0.6;
+}
+
+main .book-description-content span p:last-child {
+    font-weight: 600;
+    opacity: 1;
+}
+main .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+main .button-group button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #288DD3;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1.5px solid #288DD3;
+}
+main .button-group button:hover {
+    background-color: #0280b6;
+}
+
+main .button-group button:last-child {
+    background-color: white;
+    color: #288DD3;
+}
+main .button-group button:last-child:hover{
+    background-color: #f2f2f2;
+}
+
+main .similar-book {
+    margin: 3rem 10rem;
+    margin-bottom: 10rem;
+}
+main .similar-book-title {
+    margin-bottom: 30px;
+}
+
+.collection-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+

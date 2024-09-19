@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/book-collection.css">
+    <script src="https://kit.fontawesome.com/e7a7d8cf45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="../../assets/Images/logo-LKC.png" alt="">
+        <nav>
+            <div class="navbar">
+                <a href="./landing-page.html" class="nav-item">Home</a>
+                <div class="dropdown">
+                    <a href="" class="nav-item dropdown-btn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="./book-collection.html">Peminjaman Buku</a>
+                        <a href="./form-donasi.html">Donasi Buku</a>
+                        <a href="./book-detail.html">Buku</a>
+                    </div>
+                </div>
+                <a href="" class="nav-item">About</a>
+                <a href="" class="nav-item">Contact</a>
+                <a href="./profile-page.html" class="nav-item">Profile</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <nav class="breadcrumb">
+            <ol class="breadcrumb-collection">
+                <li class="breadcrumb-item">
+                    <a href="">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="">Search</a>
+                </li>
+                <!-- <li class="breadcrumb-item">\ buku</li> -->
+            </ol>
+        </nav>
+
+
+        <section class="search-section">
+            <div class="search-col">
+                <h4>Search</h4>
+                
+                <form action="">
+                    <div class="">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Type Here">
+                    </div>
+                    <div class="">
+                        <label for="collection">Title</label>
+                        <select name="collection" id="collection">
+                            <option value="all">All</option>
+                            <option value="all">All</option>
+                            <option value="all">All</option>
+                            <option value="all">All</option>
+                            <option value="all">All</option>
+                            <option value="all">All</option>
+                            <option value="all">All</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject">
+                            <option value="all">All</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="location">Location</label>
+                        <select name="location" id="location">
+                            <option value="all">All</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="review">Review</label>
+                        <span class="checkbox-star">
+                            <input type="checkbox" value="5" id="reviewCheckbox5">
+                            <p class="star-collection">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </span>
+                        <span class="checkbox-star">
+                            <input type="checkbox" value="5" id="reviewCheckbox5">
+                            <p class="star-collection">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                            </p>
+                        </span>
+                        <span class="checkbox-star">
+                            <input type="checkbox" value="5" id="reviewCheckbox5">
+                            <p class="star-collection">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                            </p>
+                        </span>
+                        <span class="checkbox-star">
+                            <input type="checkbox" value="5" id="reviewCheckbox5">
+                            <p class="star-collection">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                            </p>
+                        </span>
+                        <span class="checkbox-star">
+                            <input type="checkbox" value="5" id="reviewCheckbox5">
+                            <p class="star-collection">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                                <i class="fa-regular fa-star star-empty"></i>
+                            </p>
+                        </span>
+                    </div>
+                    <div class="">
+                        <label for="sortBy">Sort By</label>
+                        <select name="sortBy" id="SortBy">
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+                    <div class="button-collection">
+                        <button>SEARCH</button>
+                        <button class="active-button">CLEAR ALL</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="collection-list">
+                <div class="book">
+                    <img src="../../assets/Images/books/book-01.jpg" alt="" class="book-image">
+                    <div class="book-description">
+                        <p class="book-type-name">E-Book</p>
+                        <h4 class="book-title">Site Analysis: Informing Context-Sensitive and Sustainable Site
+                            Planning
+                            and Design</h4>
+                        <p class="book-author">Author</p>
+                        <h6 class="book-release">2013</h6>
+                        <p class="book-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star star-empty"></i>
+                            <i class="fa-regular fa-star star-empty"></i>
+                            <i class="fa-regular fa-star star-empty"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="../../assets/Images/books/book-01.jpg" alt="" class="book-image">
+                    <div class="book-description">
+                        <p class="book-type-name">E-Book</p>
+                        <h4 class="book-title">Site Analysis: Informing </h4>
+                        <p class="book-author">Author</p>
+                        <h6 class="book-release">2013</h6>
+                        <p class="book-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star star-empty"></i>
+                            <i class="fa-regular fa-star star-empty"></i>
+                            <i class="fa-regular fa-star star-empty"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagination">
+            <div class="pagination-number">
+                <button>
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="active-pagination">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
