@@ -13,22 +13,15 @@
         <img src="../../assets/Images/logo4.png" alt="">
         <nav>
             <div class="navbar">
-                <a href="./landing-page.html" class="nav-item">Home</a>
+                <a href="/src/view/landing-page.html" class="nav-item">Home</a>
                 <div class="dropdown">
-                    <a href="" class="nav-item dropdown-btn">Services</a>
-                    <div class="dropdown-content">
-                        <a href="./book-collection.html" class="nav-item">Peminjaman Buku</a>
-                        <a href="./form-donasi.html" class="nav-item">Donasi Buku</a>
-                        <a href="./book-detail.html" class="nav-item">Buku</a>
+                    <a href="" class="nav-item dropdown-btn" id="dropdown-btn">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="dropdown-icon"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
+                    <div class="dropdown-content dropdown-show">
+                        <a href="/src/view/book-collection.html">Peminjaman dan Donasi Buku</a>
+                        <a href="/src/view/form-donasi.html">Donasi Buku</a>
                     </div>
                 </div>
-                <a href="" class="nav-item">About</a>
-                <a href="" class="nav-item">Contact</a>
-                <a href="./profile-page.html" class="nav-profile nav-item">
-                    <i class="fa-solid fa-user profile-icon"></i>
-                    <span>Aldo</span>
-                    <!-- <i class="fa-solid fa-angle-down"></i> -->
-                </a>
+                <a href="/src/view/profile-page.html" class="nav-item">Profile</a>
             </div>
         </nav>
     </header>
@@ -37,21 +30,19 @@
         <section class="section-form-donasi">
             <div>
                 <h2 class="form-title">Form Donasi Buku</h2>
-                <form action="">
+                <form action="" id="donasi-form">
                     <div class="user-form">
                         <h4 class="title-block">Data Diri</h4>
                         <div class="input-block">
                             <label for="namaLengkap">Nama Lengkap</label>
                             <input type="text" id="namaLengkap" name="namaLengkap">
+                            <p class="error-msg" id="namaLengkapErr"></p>
                         </div>
                         <div class="input-block">
                             <label for="noTelepon">Nomor Telepon</label>
                             <input type="text" name="noTelepon" id="noTelepon">
+                            <p class="error-msg" id="noTeleponErr"></p>
                         </div>
-                        <!-- <div class="input-block">
-                            <label for="alamat">Alamat</label>
-                            <textarea name="alamat" id="alamat" cols="20" rows="5"></textarea>
-                        </div> -->
                     </div>
                     
                     <div class="book-form">
@@ -59,21 +50,26 @@
                         <div class="input-block">
                             <label for="judulBuku">Judul Buku</label>
                             <input type="text" name="judulBuku" id="judulBuku">
+                            <p class="error-msg" id="judulBukuErr"></p>
                         </div>
                         <div class="input-block">
                             <label for="penulis">Penulis</label>
                             <input type="text" name="penulis" id="penulis">
+                            <p class="error-msg" id="penulisErr"></p>
                         </div>
                         <div class="input-block">
                             <label for="kondisiBuku">KondisiBuku</label>
                             <select name="kondisiBuku" id="kondisiBuku">
+                                <option value="">Pilih Opsi Kondisi Buku</option>
                                 <option value="baru">baru</option>
                                 <option value="bekas">bekas</option>
                             </select>
+                            <p class="error-msg" id="kondisiBukuErr"></p>
                         </div>
                         <div class="input-block">
                             <label for="deskripsi">Deskripsi (Optional)</label>
                             <textarea name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
+                            <p class="error-msg" id="deskripsiErr"></p>
                         </div>
                     </div>
 
@@ -82,18 +78,25 @@
                         <div class="input-block">
                             <label for="opsi">Opsi Pengiriman Buku</label>
                             <select name="opsi" id="opsi">
-                                <option value="antar jemput">antar jemput</option>
+                                <option value="">Pilih Opsi Pengiriman Buku</option>
+                                <option value="penjemputan">penjemputan</option>
                                 <option value="pengiriman langsung">pengiriman langsung</option>
                             </select>
+                            <p class="error-msg" id="opsiErr"></p>
                         </div>
-                        <div id="opsiJemput">
+                        <div id="opsiJemput" class="hide">
                             <div class="input-block">
                                 <label for="alamatPengirim">Alamat</label>
-                                <textarea name="alamatPengirim" id="alamatPengirim" cols="30" rows="10"></textarea>
+                                <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+                                <p class="error-msg" id="alamatErr"></p>
                             </div>
                         </div>
                     </div>
-                    <input type="checkbox" name="terms" id="terms"> Saya menyetujui <a href="">syarat dan ketentuan</a> privasi aplikasi.
+                    <input type="checkbox" name="terms" id="terms"> 
+                    <label for="terms">
+                        Saya menyetujui <a href="">syarat dan ketentuan</a> privasi aplikasi.
+                    </label>
+                    <p class="error-msg" id="termsErr"></p>
                     <div class="submit-form">
                         <button>Submit</button>
                     </div>
@@ -103,4 +106,5 @@
     </main>
     
 </body>
+<script src="/src/js/form-donasi.js"></script>
 </html>

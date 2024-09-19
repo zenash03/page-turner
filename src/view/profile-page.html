@@ -18,20 +18,13 @@
             <div class="navbar">
                 <a href="./landing-page.html" class="nav-item">Home</a>
                 <div class="dropdown">
-                    <a href="" class="nav-item dropdown-btn">Services</a>
-                    <div class="dropdown-content">
-                        <a href="./book-collection.html" class="nav-item">Peminjaman Buku</a>
-                        <a href="./form-donasi.html" class="nav-item">Donasi Buku</a>
-                        <a href="./book-detail.html" class="nav-item">Buku</a>
+                    <a href="" class="nav-item dropdown-btn" id="dropdown-btn">Services <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="dropdown-icon"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
+                    <div class="dropdown-content dropdown-show">
+                        <a href="./book-collection.html">Peminjaman Buku</a>
+                        <a href="./form-donasi.html">Donasi Buku</a>
                     </div>
                 </div>
-                <a href="" class="nav-item">About</a>
-                <a href="" class="nav-item">Contact</a>
-                <a href="./profile-page.html" class="nav-profile nav-item">
-                    <i class="fa-solid fa-user profile-icon"></i>
-                    <span>Aldo</span>
-                    <!-- <i class="fa-solid fa-angle-down"></i> -->
-                </a>
+                <a href="./profile-page.html" class="nav-item">Profile</a>
             </div>
         </nav>
     </header>
@@ -65,8 +58,8 @@
                 <aside class="sidebar">
                     <a class="sidebar-item active">Profile</a>
                     <a class="sidebar-item">History</a>
-                    <a class="sidebar-item">FAQ</a>
-                    <a class="sidebar-item logout">Logout</a>
+                    <!-- <a class="sidebar-item">FAQ</a> -->
+                    <a class="sidebar-item logout" href="./login.html">Logout</a>
                 </aside>
                 <article class="main-content">
                     <div class="content show">

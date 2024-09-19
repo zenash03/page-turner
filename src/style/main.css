@@ -76,6 +76,12 @@ header img {
     display: inline-block;
     position: relative;
 }
+.dropdown-icon {
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    fill: #3A3A3C;
+}
 .dropdown:hover .dropdown-btn {
     background-color: #f1f1f1;
 }
@@ -85,6 +91,30 @@ header img {
 }
 .nav-profile span {
     margin-left: 10px;
+}
+.navbar .button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #0063F7;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-weight: 500;
+    border: 1px solid #0063F7;
+    cursor: pointer;
+}
+.navbar .button:hover {
+    background-color: #00A0E3;
+    border: 1px solid #00A0E3;
+}
+.navbar .register {
+    background-color: white;
+    color: #0063F7;
+    border: 1px solid #0063F7;
+}
+.navbar .register:hover {
+    background-color: #ffffff;
+    color: #00A0E3;
 }
 
 .breadcrumb {
@@ -115,9 +145,13 @@ header img {
     border: 1.5px solid #EBEBF0;
     border-radius: 10px;
     display: flex;
+    cursor: pointer;
 }
 .book .book-image {
     width: 150px;
+    border: 1px solid #ececec;
+    border-radius: 6px;
+    height: fit-content;
 }
 .book .book-description {
     padding: 0 20px;
@@ -145,8 +179,16 @@ header img {
     color: #8F90A6;
     letter-spacing: 0.01rem;
 }
-.book .book-description .book-rating i {
+.book-rating {
+    margin-top: 4px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2px;
+}
+.book .book-description .book-rating .icon-star {
     color:rgb(243, 204, 27);
+    width: 18px;
+    height: 18px;
 } 
 .book .book-description .book-rating .star-empty {
     color: #d4d4d4;
@@ -196,4 +238,8 @@ footer .footer-copyright p {
     padding: 20px;
     color: white;
     border-top: 1px solid #ffffff;
+}
+footer .footer-icon {
+    width: 22px;
+    height: 22px;
 }

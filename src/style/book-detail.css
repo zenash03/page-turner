@@ -14,6 +14,7 @@ main .book-content {
 main .book-content .book-detail-img {
     width: 100%;
     border-radius: 6px;
+    border: 1px solid #ececec;
 }
 main .book-detail-content {
 
@@ -31,16 +32,19 @@ main .book-detail-content .book-detail-type {
     padding: 2px 15px;
     border-radius: 15px;
     width: fit-content;
+    height: 25px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main .book-detail-content .book-author {
     color: #999999;
 }
-main .book-detail-content .book-rating i{
+main .book-detail-content .book-rating .icon-star{
     color: rgb(243, 204, 27);
-}
-main .book-detail-content .book-rating .star-empty {
-    color: #d4d4d4;
+    width: 22px;
+    height: 22px;
 }
 
 main .book-description-content {
@@ -97,10 +101,12 @@ main .similar-book {
 main .similar-book-title {
     margin-bottom: 30px;
 }
+.book-image {
+    height: fit-content;
+}
 
 .collection-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-

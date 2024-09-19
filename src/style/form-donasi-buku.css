@@ -14,8 +14,21 @@ main .section-form-donasi input, select, textarea {
     border: 1px solid #d4d4d4;
     border-radius: 6px;
 }
+main .section-form-donasi textarea {
+    resize: vertical;
+    min-height: 200px;
+}
 main .section-form-donasi input:focus, select:focus, textarea:focus {
     outline: 1px solid #EBEBF0;
+}
+main .section-form-donasi .error-msg {
+    color: #FF3B3B;
+    font-size: 14px;
+    text-align: right;
+    font-weight: 600;
+}
+main .section-form-donasi #termsErr {
+    text-align: left;
 }
 
 main .section-form-donasi .input-block {
@@ -51,6 +64,11 @@ main .section-form-donasi .metode-pengiriman h4{
     color: #288DD3;
     font-size: 18px;
 }
+main .hide {
+    display: none;
+}
+
+
 
 main .section-form-donasi .submit-form {
     display: grid;

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/login.css">
-    <title>Login Form</title>
+    <link rel="stylesheet" href="../style/register.css">
+    <title>Register Form</title>
 </head>
 <body>
     <main>
@@ -25,21 +25,38 @@
                     <img src="../../assets/Images/reading_book.svg" alt="" class="login-image">
                 </div>
                 <div class="login-right">
-                    <h2>Login</h2>
-                    <form action="" id="login">
+                    <h2>Register</h2>
+                    <form action="" id="register-form">
+                        <div class="input-block">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username">
+                            <p class="err-msg" id="usernameErr"></p>
+                        </div>
                         <div class="input-block">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="text" id="email" name="email">
+                            <p class="err-msg" id="emailErr"></p>
+                        </div>
+                        <div class="input-block">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob">
+                            <p class="err-msg" id="dobErr"></p>
                         </div>
                         <div class="input-block">
                             <label for="password">Password</label>
                             <input type="password" id="password" name="password">
+                            <p class="err-msg" id="passwordErr"></p>
                         </div>
                         <div class="input-block">
-                            <input type="submit" value="Login">
+                            <label for="confPassword">Confirm Password</label>
+                            <input type="password" id="confPassword" name="confPassword">
+                            <p class="err-msg" id="confPasswordErr"></p>
+                        </div>
+                        <div class="input-block">
+                            <button>Register</button>
                         </div>
                         <div>
-                            <p class="dont-have-account">Don't Have account ? <a href="./register.html">Register Now</a></p>
+                            <p class="dont-have-account">Have account ? <a href="./login.html">Login Now</a></p>
                         </div>
                     </form>
                 </div>
@@ -47,9 +64,9 @@
         </section>
     </main>
 </body>
+<script src="../js/register.js"></script>
 <script>
     document.addEventListener('mousemove', parallaxEffect);
-    // document.addEventListener('hover', )
 
     function parallaxEffect(e) {
         document.querySelectorAll('.icon-group .icon').forEach(function(move) {
@@ -62,10 +79,5 @@
             // move.style.transform = `translateX(${x}px) translateY(${y}px)`;
         })
     }
-    const login = document.getElementById('login');
-    login.addEventListener('submit', function(e) {
-        e.preventDefault();
-        window.location.href = "./landing-page.html"
-    })
 </script>
 </html>

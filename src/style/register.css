@@ -77,7 +77,7 @@ main .section-login .login-block .input-block input {
     background-color: rgba(255, 255, 255, 0.4);
     outline: none;
 }
-main .section-login .login-block .input-block input[type="submit"] {
+main .section-login .login-block .input-block button {
     padding: 10px;
     font-size: 15px;
     border: none;
@@ -89,6 +89,13 @@ main .section-login .login-block .input-block input[type="submit"] {
 }
 main .section-login .login-block .input-block button:hover {
     background-color: #0280b6;
+}
+main .section-login .login-block .err-msg {
+    text-transform: capitalize;
+    color: #f02525;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
 }
 main .dont-have-account {
     color: #ffffff;
